@@ -19,6 +19,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install withings-sync
 
+      - name: write config file
+        run: |
+
+          cat <<EOF > $HOME/.withings_user.json
+          {
+            "authentification_code": "e0c81d76954b8e8dc3ed4b726065b11ff06095f4"
+          }
+          EOF
+
       - name: execute py script # run main.py
         run: withings-sync -f 2024-04-01 -v
     
