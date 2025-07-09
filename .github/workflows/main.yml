@@ -24,7 +24,7 @@ jobs:
 
           cat <<EOF > $HOME/.withings_user.json
           {
-            "authentification_code": "e0c81d76954b8e8dc3ed4b726065b11ff06095f4"
+            "authentification_code": "2d700940db825ec934e2df8f44bcf57fcff223b4"
           }
           EOF
 
